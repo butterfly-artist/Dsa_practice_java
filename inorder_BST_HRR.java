@@ -27,9 +27,7 @@ public class Solution {
             return ;
         }
         Inorder(root.left);
-        
         System.out.print(root.data+" ");
-        
         Inorder(root.right);
     }
 
