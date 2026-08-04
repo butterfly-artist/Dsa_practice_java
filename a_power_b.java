@@ -27,3 +27,4 @@ public class Main {
         
     }
 }
+//type one simple based on the check bits 
