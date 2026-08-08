@@ -28,4 +28,4 @@ public class Main {
         
     }
 }
-//not accepted 30 score/100 score
+//not accepted 30 /100 score
