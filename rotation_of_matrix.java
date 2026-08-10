@@ -22,7 +22,7 @@ public class Main {
                    System.out.print(arr1[j][i]+" ");
                 }System.out.println();
             }
-            
+            //NO EIDTS ON THE 10.08.2026
         }
         
     }
