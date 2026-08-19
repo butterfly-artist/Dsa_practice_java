@@ -6,11 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int T=sc.nextInt();
-        Set<Long> set=new HashSet<>();
         while(T-->0){
             long N=sc.nextLong();
             long X=sc.nextLong();
             boolean fount=false;
+             Set<Long> set=new HashSet<>();
             for(long i=0;i<N;i++){
                 long num=sc.nextLong();
                 long target=X-num;
@@ -28,4 +28,4 @@ public class Main {
         
     }
 }
-//not accepted 30 /100 score
+// accepted solution for sum of pairs problem
