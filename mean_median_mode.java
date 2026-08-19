@@ -36,3 +36,4 @@ public class Main {
 
     }
 }
+//complex mean median mode redo
