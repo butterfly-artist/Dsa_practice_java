@@ -18,7 +18,8 @@ public class Main {
             }else{
                 countc++;
             }
-            //}
+            
         }System.out.println(countv+" "+countc);
     }
 }
+//24.08.2026
