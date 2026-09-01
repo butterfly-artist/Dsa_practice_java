@@ -16,7 +16,7 @@ public class Main {
             mp.put(c,mp.getOrDefault(c,0)+1);
            }
            for(char c:s){
-            if(mp.get(c)==2)
+            if(mp.get(c)>=2)
            System.out.println(c);
            break;
            }
