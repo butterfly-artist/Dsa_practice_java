@@ -12,3 +12,4 @@ public static String timeConversion(String s) {
     }
     return sb.substring(0,8);
     }
+//cheat day 
