@@ -23,5 +23,5 @@ public class Main {
         }
     }
 }
-
+//
 //given perfect cude root of a number N, find the cube root of N. If the cube root is not an integer, return 0.
