@@ -24,7 +24,7 @@ public class Main {
         HashSet<Integer> B=new HashSet<>();
         for(int i=0;i<M;i++){
             B.add(sc.nextInt());
-        }
+        }//
         HashSet<Integer> union =new HashSet<>(A);
         union.addAll(B);
         printSortedSet(union);
