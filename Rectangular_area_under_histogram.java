@@ -52,6 +52,58 @@ public class Main {
 
 // partially solved
 
+// Completely solved 
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int T=sc.nextInt();
+        sc.nextLine();
+        while(T-->0){
+           int N=sc.nextInt();
+           int[] arr=new int[N];
+           for(int i=0;i<N;i++){
+            arr[i]=sc.nextInt();
+           }
+           long maxArea=0,area=0;
+           int[] right=new int[N];
+           int[] left=new int[N];
+
+           lnextSmaller(arr,left,N);
+           rnextSmaller(arr,right,N);
+           for(int i=0;i<N;i++){
+            area=(long)(right[i]-left[i]-1)*arr[i];
+            maxArea=Math.max(maxArea,area);
+           }
+           System.out.println(maxArea);
+        }
+        
+    }
+    public static void lnextSmaller(int[] arr,int[] left,int N){
+        Arrays.fill(left,-1);
+        Stack<Integer> st=new Stack<>();
+        for(int i=N-1;i>=0;i--){
+            while(st.size()!=0 && arr[st.peek()]>arr[i]){
+                left[st.pop()]=i;
+               
+            }st.push(i);
+        }
+    }
+    public static void rnextSmaller(int[] arr,int[] right,int N){
+        Arrays.fill(right,N);
+        Stack<Integer> st=new Stack<>();
+        for(int i=0;i<N;i++){
+            while(st.size()!=0 && arr[st.peek()]>arr[i]){
+                right[st.pop()]=i;
+               
+            }st.push(i);
+        }
+    }
+}
+
 // Rectangular Area Under Histogram 
 // Given the height of adjacent buildings, find the largest rectangular area possible, where the largest rectangle can be made of a number of contiguous buildings. For simplicity, assume that all buildings have the same width and the width is 1 unit.
 // Note that the sides of the rectangle have to be parallel to the axes.
